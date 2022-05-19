@@ -10,6 +10,35 @@
 </head>
 
 <body>
+    <!-- preventDefault() Event Method -->
+    <h1>preventDefault() Event Method</h1>
+    <p>• The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs
+        to the event will not occur.</p>
+    <p>• For example, this can be useful when :
+        <br> ||--- Clicking on a "Submit" button, prevent it from submitting a form
+        <br> ||--- Clicking on a link, prevent the link from following the URL
+    </p>
+    <p>• NOTE : Not all events are cancelable. Use the cancelable property to find out if an event is cancelable.</p>
+    <p>• NOTE : The preventDefault() method does not prevent further propagation of an event through the DOM. Use the
+        stopPropagation() method to handle this.</p>
+    <br>
+
+    <!-- EXAMPLE 1 || -->
+    <p>• <strong>EXAMPLE 1 ||</strong>
+        Prevent a link from opening the URL :
+    </p>
+    <a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a>
+    <p>The preventDefault() method will prevent the link above from following the URL.</p>
+    <br>
+
+    <!-- EXAMPLE 2 || -->
+    <p>• <strong>EXAMPLE 2 ||</strong>
+        Prevent the default action of a checkbox :</p>
+    Try to check this box : <input type="checkbox" id="myCheckbox">
+    <p>Toggling a checkbox is the default action of clicking on a checkbox. The preventDefault() method prevents this
+        from happening.</p>
+    <hr>
+
     <script src="doubts.js"></script>
 </body>
 
